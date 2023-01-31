@@ -11,7 +11,7 @@ unset GATOR_INITIAL_MB
 export CXX=hipcc
 unset CXXFLAGS
 
-cmake -DYAKL_ARCH="HIP"                                                                       \
-      -DYAKL_HIP_FLAGS="-DORD=9 -O3 -ffast-math --offload-arch=gfx90a --amdgpu-target=gfx90a" \
+cmake -DYAKL_ARCH="HIP"                                                                \
+      -DYAKL_HIP_FLAGS="-DORD=9 -O3 -ffast-math --offload-arch=gfx90a -Wno-unused-result" \
       ..
 
