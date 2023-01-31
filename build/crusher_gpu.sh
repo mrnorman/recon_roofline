@@ -1,8 +1,7 @@
 #!/bin/bash
 
 source $MODULESHOME/init/bash
-module purge
-module load rocm/5.4.0 cmake gcc
+module load PrgEnv-amd amd/5.4.0 cmake
 
 ./cmakeclean.sh
 
